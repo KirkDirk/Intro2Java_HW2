@@ -17,10 +17,20 @@ public class HW_t4 {
         result.setLength(0);
         result.append(num1 + " - " + num2 + " = " + (num1-num2));
         System.out.println(result);
-        result.setLength(0);
-        result.append(num1 + " * " + num2 + " = " + (num1*num2));
-        System.out.println(result);
+        StringBuilder result1 = new StringBuilder("");
+        result1.append(num1 + " * " + num2 + " = " + (num1*num2));
+        System.out.println(result1);
         
+// 5. Замените символ “=” на слово “равно”. Используйте методы StringBuilder.insert(),StringBuilder.deleteCharAt().
+
+        result.deleteCharAt(7);
+        result.insert(7, " равно");
+        System.out.println(result);  
+
+// 6. *Замените символ “=” на слово “равно”. Используйте методы StringBuilder.replace().
+
+        result1.replace(6, 8, " равно ");
+        System.out.println(result1);
 
     }
 }
